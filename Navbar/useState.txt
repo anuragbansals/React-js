@@ -1,0 +1,25 @@
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import './App.css'
+
+const App = ()=> {
+  const [numbers, setNumbers] = useState([])
+  
+  const buttonHandler = () => {
+    setNumbers([...numbers, Math.random()*100])
+  }
+  
+  return (
+    <div>
+      {
+        numbers.map(ele=>{
+          return <h1>{ele}</h1>
+        })
+      }
+      <p><button onClick={buttonHandler}>Click Me</button></p>
+    </div>
+  )
+}
+
+ReactDOM.render(<App/>,document.getElementById('root') );
+

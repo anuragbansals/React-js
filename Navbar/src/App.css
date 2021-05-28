@@ -1,0 +1,50 @@
+.nav {
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 26px;
+    color: rgb(0,0,0,0.9);
+    margin-right: 16px;
+}
+
+button{
+    border: solid, 1px, gray;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: rgb(0,0,0,0.1);
+    color: rgba(0,0,0,0.5);
+    padding: 5px 12px;
+}
+
+.link{
+    margin: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgba(0,0,0,0.5);
+}
+
+.hamburger-toggle{
+    display: none;
+}
+
+@media (max-width: 700px){
+    nav {
+        display: block;
+    }
+    .hamburger-toggle{
+        display: inline-block;
+        float: right;
+    }
+
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+    }
+    .hide{
+        display: none;
+    }
+}
